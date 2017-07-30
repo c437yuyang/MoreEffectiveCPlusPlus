@@ -19,6 +19,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_临时对象", "19_临�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_返回值里的临时对象的优化", "20_返回值里的临时对象的优化\20_返回值里的临时对象的优化.vcxproj", "{9135C0E1-1485-4763-ADEC-BCEA7111216D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_01_阻止建立类的对象", "26_01_阻止建立类的对象\26_01_阻止建立类的对象.vcxproj", "{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_01_判断对象在堆上", "27_01_判断对象在堆上\27_01_判断对象在堆上.vcxproj", "{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_01_SmartPtr", "28_01_SmartPtr\28_01_SmartPtr.vcxproj", "{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +97,30 @@ Global
 		{9135C0E1-1485-4763-ADEC-BCEA7111216D}.Release|x64.Build.0 = Release|x64
 		{9135C0E1-1485-4763-ADEC-BCEA7111216D}.Release|x86.ActiveCfg = Release|Win32
 		{9135C0E1-1485-4763-ADEC-BCEA7111216D}.Release|x86.Build.0 = Release|Win32
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Debug|x64.ActiveCfg = Debug|x64
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Debug|x64.Build.0 = Debug|x64
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Debug|x86.Build.0 = Debug|Win32
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Release|x64.ActiveCfg = Release|x64
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Release|x64.Build.0 = Release|x64
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Release|x86.ActiveCfg = Release|Win32
+		{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}.Release|x86.Build.0 = Release|Win32
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Debug|x64.ActiveCfg = Debug|x64
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Debug|x64.Build.0 = Debug|x64
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Debug|x86.ActiveCfg = Debug|Win32
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Debug|x86.Build.0 = Debug|Win32
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Release|x64.ActiveCfg = Release|x64
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Release|x64.Build.0 = Release|x64
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Release|x86.ActiveCfg = Release|Win32
+		{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}.Release|x86.Build.0 = Release|Win32
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Debug|x64.ActiveCfg = Debug|x64
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Debug|x64.Build.0 = Debug|x64
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Debug|x86.ActiveCfg = Debug|Win32
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Debug|x86.Build.0 = Debug|Win32
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x64.ActiveCfg = Release|x64
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x64.Build.0 = Release|x64
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x86.ActiveCfg = Release|Win32
+		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
