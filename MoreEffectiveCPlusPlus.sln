@@ -7,11 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_总计", "00_总计\00_�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_01_Cpp风格Cast", "02_01_Cpp风格Cast\02_01_Cpp风格Cast.vcxproj", "{B9DB60E3-5319-452B-B872-4902FA2E47BF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_默认构造函数", "04_默认构造函数\04_默认构造函数.vcxproj", "{E5388EC4-CE91-4F13-8EE2-030FC7C8D788}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_01_默认构造函数", "04_默认构造函数\04_默认构造函数.vcxproj", "{E5388EC4-CE91-4F13-8EE2-030FC7C8D788}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_01_类型转换函数", "05_01_类型转换函数\05_01_类型转换函数.vcxproj", "{20F7C6C1-7CAD-4E22-B3B0-E8841E9DBB7E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_increment的两种形式", "06_increment的两种形式\06_increment的两种形式.vcxproj", "{9E7B23B0-2846-4859-BDAC-801C0C66F8DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_01_increment的两种形式", "06_increment的两种形式\06_increment的两种形式.vcxproj", "{9E7B23B0-2846-4859-BDAC-801C0C66F8DA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_operator_new和new_operator", "08_operator_new和new_operator\08_operator_new和new_operator.vcxproj", "{19BCBAC1-234C-42BD-9386-118624946F30}"
 EndProject
@@ -24,6 +24,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_01_判断对象在堆上", "27_01_判断对象在堆上\27_01_判断对象在堆上.vcxproj", "{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_01_SmartPtr", "28_01_SmartPtr\28_01_SmartPtr.vcxproj", "{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_02_proxyclass", "05_02_proxyclass\05_02_proxyclass.vcxproj", "{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_01_对数组使用多态", "03_01_对数组使用多态\03_01_对数组使用多态.vcxproj", "{3EC224ED-BA9B-4536-B818-931876F88CC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_02_隐式类型转换带来的问题", "05_02_隐式类型转换带来的问题\05_02_隐式类型转换带来的问题.vcxproj", "{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +127,30 @@ Global
 		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x64.Build.0 = Release|x64
 		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x86.ActiveCfg = Release|Win32
 		{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}.Release|x86.Build.0 = Release|Win32
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Debug|x64.ActiveCfg = Debug|x64
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Debug|x64.Build.0 = Debug|x64
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Debug|x86.Build.0 = Debug|Win32
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Release|x64.ActiveCfg = Release|x64
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Release|x64.Build.0 = Release|x64
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Release|x86.ActiveCfg = Release|Win32
+		{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}.Release|x86.Build.0 = Release|Win32
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Debug|x64.ActiveCfg = Debug|x64
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Debug|x64.Build.0 = Debug|x64
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Debug|x86.ActiveCfg = Debug|Win32
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Debug|x86.Build.0 = Debug|Win32
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Release|x64.ActiveCfg = Release|x64
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Release|x64.Build.0 = Release|x64
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Release|x86.ActiveCfg = Release|Win32
+		{3EC224ED-BA9B-4536-B818-931876F88CC4}.Release|x86.Build.0 = Release|Win32
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Debug|x64.ActiveCfg = Debug|x64
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Debug|x64.Build.0 = Debug|x64
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Debug|x86.ActiveCfg = Debug|Win32
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Debug|x86.Build.0 = Debug|Win32
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x64.ActiveCfg = Release|x64
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x64.Build.0 = Release|x64
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x86.ActiveCfg = Release|Win32
+		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

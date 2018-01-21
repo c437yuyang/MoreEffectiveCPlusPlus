@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E5388EC4-CE91-4F13-8EE2-030FC7C8D788}</ProjectGuid>
+    <ProjectGuid>{9548A9AC-A8CE-4AC5-9CF7-DBF47C5624EE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My04_默认构造函数</RootNamespace>
+    <RootNamespace>My05_02_proxyclass</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>04_01_默认构造函数</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -150,7 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="04_默认构造函数.cpp" />
+    <ClCompile Include="05_02_proxyclass.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
