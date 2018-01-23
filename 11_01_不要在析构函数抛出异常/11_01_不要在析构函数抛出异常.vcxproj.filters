@@ -29,7 +29,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="19_01_临时对象.cpp">
+    <ClCompile Include="11_01_不要在析构函数抛出异常.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

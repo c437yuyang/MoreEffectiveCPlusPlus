@@ -31,6 +31,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_01_对数组使用多态
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_02_隐式类型转换带来的问题", "05_02_隐式类型转换带来的问题\05_02_隐式类型转换带来的问题.vcxproj", "{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_01_在构造函数中防止抛出异常", "09_01_在析构函数中防止抛出异常\09_01_在析构函数中防止抛出异常.vcxproj", "{B480CFED-5F60-49E0-B228-7AE557C299D3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_01_不要在析构函数抛出异常", "11_01_不要在析构函数抛出异常\11_01_不要在析构函数抛出异常.vcxproj", "{FE52103E-2068-457A-B4C0-A6FC89625E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +155,22 @@ Global
 		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x64.Build.0 = Release|x64
 		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x86.ActiveCfg = Release|Win32
 		{9408A7B2-24D5-43ED-A3C3-8B5CCAC59683}.Release|x86.Build.0 = Release|Win32
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Debug|x64.ActiveCfg = Debug|x64
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Debug|x64.Build.0 = Debug|x64
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Debug|x86.ActiveCfg = Debug|Win32
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Debug|x86.Build.0 = Debug|Win32
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Release|x64.ActiveCfg = Release|x64
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Release|x64.Build.0 = Release|x64
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Release|x86.ActiveCfg = Release|Win32
+		{B480CFED-5F60-49E0-B228-7AE557C299D3}.Release|x86.Build.0 = Release|Win32
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Debug|x64.ActiveCfg = Debug|x64
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Debug|x64.Build.0 = Debug|x64
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Debug|x86.Build.0 = Debug|Win32
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x64.ActiveCfg = Release|x64
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x64.Build.0 = Release|x64
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x86.ActiveCfg = Release|Win32
+		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

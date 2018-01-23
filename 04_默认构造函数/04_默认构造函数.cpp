@@ -5,6 +5,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Widget {
@@ -45,6 +46,10 @@ int main()
 		pws[i].~Widget();
 	}
 	operator delete[](rawMem);
+
+
+	//vector 不依赖于默认构造函数,结果实际测试发现还是必须有默认构造函数才行的
+	//vector<Widget> vW(3);
 
 	system("pause");
 	return 0;

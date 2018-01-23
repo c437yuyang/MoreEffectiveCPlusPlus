@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{47CFF643-FB15-418B-A97B-0997CD2B415D}</ProjectGuid>
+    <ProjectGuid>{FE52103E-2068-457A-B4C0-A6FC89625E81}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My19_临时对象</RootNamespace>
+    <RootNamespace>My11_01_不要在析构函数抛出异常</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>19_01_临时对象</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -150,7 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="19_01_临时对象.cpp" />
+    <ClCompile Include="11_01_不要在析构函数抛出异常.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
