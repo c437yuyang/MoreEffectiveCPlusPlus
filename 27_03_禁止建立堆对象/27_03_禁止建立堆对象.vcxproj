@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}</ProjectGuid>
+    <ProjectGuid>{5D983578-4526-4B55-8774-58D485858A6A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My27_01_判断对象在堆上</RootNamespace>
+    <RootNamespace>My27_03_禁止建立堆对象</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>27_02_判断对象在堆上</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -146,12 +145,11 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HeepTrack.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="27_02_判断对象在堆上.cpp" />
+    <ClCompile Include="27_03_禁止建立堆对象.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -15,13 +15,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_01_increment的两种形
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_operator_new和new_operator", "08_operator_new和new_operator\08_operator_new和new_operator.vcxproj", "{19BCBAC1-234C-42BD-9386-118624946F30}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_临时对象", "19_临时对象\19_临时对象.vcxproj", "{47CFF643-FB15-418B-A97B-0997CD2B415D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_01_临时对象", "19_临时对象\19_临时对象.vcxproj", "{47CFF643-FB15-418B-A97B-0997CD2B415D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_返回值里的临时对象的优化", "20_返回值里的临时对象的优化\20_返回值里的临时对象的优化.vcxproj", "{9135C0E1-1485-4763-ADEC-BCEA7111216D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_01_阻止建立类的对象", "26_01_阻止建立类的对象\26_01_阻止建立类的对象.vcxproj", "{9334F97E-E2A9-4E39-A5B9-B05C1990D8EB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_01_判断对象在堆上", "27_01_判断对象在堆上\27_01_判断对象在堆上.vcxproj", "{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_02_判断对象在堆上", "27_01_判断对象在堆上\27_01_判断对象在堆上.vcxproj", "{963147A6-3A67-41F6-9E05-1AC8A7D3BC97}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_01_SmartPtr", "28_01_SmartPtr\28_01_SmartPtr.vcxproj", "{C6CFD030-FC0E-4C27-97C0-724EC4718CD8}"
 EndProject
@@ -34,6 +34,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_01_在构造函数中防止抛出异常", "09_01_在析构函数中防止抛出异常\09_01_在析构函数中防止抛出异常.vcxproj", "{B480CFED-5F60-49E0-B228-7AE557C299D3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_01_不要在析构函数抛出异常", "11_01_不要在析构函数抛出异常\11_01_不要在析构函数抛出异常.vcxproj", "{FE52103E-2068-457A-B4C0-A6FC89625E81}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25_01_构造函数和非成员函数虚拟化", "25_01_构造函数和非成员函数虚拟化\25_01_构造函数和非成员函数虚拟化.vcxproj", "{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_02_具有引用计数功能的基类", "26_02_具有引用计数功能的基类\26_02_具有引用计数功能的基类.vcxproj", "{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_01_限制只能在堆上创建对象", "27_01_限制只能在堆上创建对象\27_01_限制只能在堆上创建对象.vcxproj", "{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_03_禁止建立堆对象", "27_03_禁止建立堆对象\27_03_禁止建立堆对象.vcxproj", "{5D983578-4526-4B55-8774-58D485858A6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +179,38 @@ Global
 		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x64.Build.0 = Release|x64
 		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x86.ActiveCfg = Release|Win32
 		{FE52103E-2068-457A-B4C0-A6FC89625E81}.Release|x86.Build.0 = Release|Win32
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Debug|x64.ActiveCfg = Debug|x64
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Debug|x64.Build.0 = Debug|x64
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Debug|x86.Build.0 = Debug|Win32
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Release|x64.ActiveCfg = Release|x64
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Release|x64.Build.0 = Release|x64
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Release|x86.ActiveCfg = Release|Win32
+		{EC96F3B7-CF4E-47D6-B546-54F9E1B6AD50}.Release|x86.Build.0 = Release|Win32
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Debug|x64.ActiveCfg = Debug|x64
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Debug|x64.Build.0 = Debug|x64
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Debug|x86.Build.0 = Debug|Win32
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Release|x64.ActiveCfg = Release|x64
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Release|x64.Build.0 = Release|x64
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Release|x86.ActiveCfg = Release|Win32
+		{FE8855AF-8396-4FBC-B68B-C4B66497E6B8}.Release|x86.Build.0 = Release|Win32
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Debug|x64.ActiveCfg = Debug|x64
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Debug|x64.Build.0 = Debug|x64
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Debug|x86.ActiveCfg = Debug|Win32
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Debug|x86.Build.0 = Debug|Win32
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Release|x64.ActiveCfg = Release|x64
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Release|x64.Build.0 = Release|x64
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Release|x86.ActiveCfg = Release|Win32
+		{FDF410B8-03A4-476E-AFB1-4E0FC1A5ED82}.Release|x86.Build.0 = Release|Win32
+		{5D983578-4526-4B55-8774-58D485858A6A}.Debug|x64.ActiveCfg = Debug|x64
+		{5D983578-4526-4B55-8774-58D485858A6A}.Debug|x64.Build.0 = Debug|x64
+		{5D983578-4526-4B55-8774-58D485858A6A}.Debug|x86.ActiveCfg = Debug|Win32
+		{5D983578-4526-4B55-8774-58D485858A6A}.Debug|x86.Build.0 = Debug|Win32
+		{5D983578-4526-4B55-8774-58D485858A6A}.Release|x64.ActiveCfg = Release|x64
+		{5D983578-4526-4B55-8774-58D485858A6A}.Release|x64.Build.0 = Release|x64
+		{5D983578-4526-4B55-8774-58D485858A6A}.Release|x86.ActiveCfg = Release|Win32
+		{5D983578-4526-4B55-8774-58D485858A6A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

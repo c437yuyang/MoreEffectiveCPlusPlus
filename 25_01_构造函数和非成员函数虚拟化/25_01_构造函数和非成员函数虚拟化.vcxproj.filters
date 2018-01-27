@@ -24,15 +24,12 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="HeepTrack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="27_02_判断对象在堆上.cpp">
+    <ClCompile Include="25_01_构造函数和非成员函数虚拟化.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

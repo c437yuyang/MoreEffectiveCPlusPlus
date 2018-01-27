@@ -11,8 +11,10 @@ public:
 	bool isOnHeap() const;
 private:
 	typedef const void * RawAddress;
-	static list<RawAddress> addresses;
+	static list<RawAddress> addresses;//使用一个list记录下所有被分配的对象
 };
+//这个方法的缺点：不能用于内置类型，比如int等，因为不能继承。
+
 list<const void *> HeapTrack::addresses; //定义static成员
 
 HeapTrack::~HeapTrack() {}//子类会用到，必须实现，因为子类并不要求去实现(这里只是为了使之成为抽象类)
