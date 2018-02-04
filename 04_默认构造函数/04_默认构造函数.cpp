@@ -11,8 +11,8 @@ using namespace std;
 class Widget {
 
 public:
-	Widget(int) {};
-
+	Widget(int i):id(i) {};
+	int id;
 };
 
 int main()
@@ -20,6 +20,7 @@ int main()
 	//Widget w = new Widget();
 
 	//Widget w[10] = new Widget[10](); //报错
+	//Widget w[10] = new Widget[10](10); //报错,new里面是不能调用有参数的构造函数的
 
 	//非堆数组可以直接通过initializer list解决
 	Widget warr[3] = { Widget(1),Widget(2),Widget(3) };
@@ -49,7 +50,8 @@ int main()
 
 
 	//vector 不依赖于默认构造函数,结果实际测试发现还是必须有默认构造函数才行的
-	//vector<Widget> vW(3);
+	vector<Widget> vW(3,10); //不然就必须这样调用，提供元素初始值
+	int i = vW[0].id;
 
 	system("pause");
 	return 0;

@@ -62,7 +62,7 @@ void TestBookEntryClass1()
 {
 	unique_ptr<BookEntry> pb = 0;
 
-	pb.reset(new BookEntry("aa", "bb", "cc", "dd")); //这样也是没有用的，new成功之前，都没有队pb赋值
+	pb.reset(new BookEntry("aa", "bb", "cc", "dd")); //这样也是没有用的，new成功之前，都没有对pb赋值
 
 }
 

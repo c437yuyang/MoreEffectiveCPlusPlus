@@ -18,7 +18,9 @@ private:
 
 Session::~Session()
 {
-	logDestruction(this); //如果logDestruction函数内抛出异常但是Session的析构函数没有被捕捉住，那么会被传递到调用者那里。但是如果析构函数本身调用就是源于其他异常的抛出(比如做什么事情的时候抛了异常然后catch到，就关闭这个连接，调用析构函数执行)，那么terminate函数将被调用，彻底终止程序。
+	logDestruction(this); 
+	//如果logDestruction函数内抛出异常但是Session的析构函数没有被捕捉住，那么会被传递到调用者那里。
+	//但是如果析构函数本身调用就是源于其他异常的抛出(比如做什么事情的时候抛了异常然后catch到，就关闭这个连接，调用析构函数执行)，那么terminate函数将被调用，彻底终止程序。
 }
 #pragma endregion
 
