@@ -24,11 +24,11 @@ private:
 	{
 		StringValue(const char *initValue) { init(initValue); }
 		~StringValue() { delete[]data_; };
-		StringValue(const StringValue&rhs)
+		StringValue(const StringValue&rhs) //供RCPtr 内部调用
 		{
 			init(rhs.data_);
 		}
-		void init(const char *initValue)
+		void init(const char *initValue) //实现深拷贝
 		{
 			data_ = new char[strlen(initValue) + 1];
 			strcpy(data_, initValue);

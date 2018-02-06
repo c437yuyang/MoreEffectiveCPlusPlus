@@ -104,7 +104,7 @@ inline const T & RCIPtr<T>::operator*() const
 }
 
 template<class T>
-inline T & RCIPtr<T>::operator*()
+inline T & RCIPtr<T>::operator*()//Ð´Ê±¿½±´
 {
 	make_copy();
 	return *(counter_->pointee_);

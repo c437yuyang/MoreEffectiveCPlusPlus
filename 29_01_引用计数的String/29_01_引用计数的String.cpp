@@ -11,7 +11,7 @@ int main()
 		//如果这样使用:
 		String s1 = "Hello";
 		char *p = &s1[1]; //拿到指针
-		String s2 = s1; //现在s2不知道p拥有了可以修改s1的指针
+		String s2 = s1; //现在s2不知道p拥有了可以修改s1的指针,然后修改，s2也会受影响就
 		*p = 'c';
 	}
 

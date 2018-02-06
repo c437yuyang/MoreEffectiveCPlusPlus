@@ -4,25 +4,33 @@
 #include "SmartPtrToConst.h"
 
 template <class T>
-class SmartPtr:public SmartPtrToConst<T> {
+class SmartPtr :public SmartPtrToConst<T>
+{
 public:
-	SmartPtr(T* realPtr = 0) :pointee(realPtr) {};
-	~SmartPtr() { if (pointee != 0) delete pointee; }
-	SmartPtr(const SmartPtr& rhs);
-	SmartPtr& operator=(const SmartPtr& rhs);
+	SmartPtr(T* realPtr = 0) :SmartPtrToConst(realPtr) {};
+	virtual ~SmartPtr()
+	{
+		if (pointee != 0)
+		{
+			delete pointee;
+			pointee = 0;
+		}
+	}
+	SmartPtr( SmartPtr& rhs);
+	SmartPtr& operator=( SmartPtr& rhs);
 	T* operator->();
 	T& operator*();
 	bool operator!();
 	template<class NewType>
 	operator SmartPtr<NewType>() { return SmartPtr<NewType>(pointee); } //模板成员函数实现所有可能隐式转型的类实现智能指针的隐式转型(主要是多态的时候的用处)
 //private:
-//	T* pointee; //改成继承自基类，解决const问题
+//	T* pointee; //改成继承自基类配合union，解决const问题
 
 };
 #endif
 
 template<class T>
-inline SmartPtr<T>::SmartPtr(const SmartPtr & rhs)
+inline SmartPtr<T>::SmartPtr(SmartPtr & rhs)
 {
 	//通常采用对象转移实现拷贝和赋值
 
@@ -32,14 +40,15 @@ inline SmartPtr<T>::SmartPtr(const SmartPtr & rhs)
 }
 
 template<class T>
-inline SmartPtr & SmartPtr<T>::operator=(const SmartPtr & rhs)
+inline SmartPtr<T> & SmartPtr<T>::operator=( SmartPtr<T> & rhs)
 {
-	if (rhs == *this)
-		return *this;
-	if (pointee != 0)
-		delete pointee; //必须先删除自己的对象才行
-	pointee = rhs.pointee;
-	rhs.pointee = 0;
+	if (this != &rhs)
+	{
+		if (pointee != 0)
+			delete pointee; //必须先删除自己的对象才行
+		pointee = rhs.pointee;
+		rhs.pointee = 0;
+	}
 	return *this;
 }
 

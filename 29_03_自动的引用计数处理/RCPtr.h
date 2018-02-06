@@ -5,6 +5,7 @@
 //要求RCPtr<T> 指向的对象是T 不是派生类
 
 //这个类就是来调用RCObject的相关引用增加减少的函数的
+//并不会负责内存的真正分配和释放，只是调用T类型的相关函数而已。
 
 template<class T>
 class RCPtr
@@ -40,7 +41,7 @@ inline RCPtr<T> & RCPtr<T>::operator=(const RCPtr & rhs)
 	if (pointee_ != rhs.pointee_)
 	{
 		if (pointee_)
-			pointee_->removeReference();
+			pointee_->removeReference();//自己当前拥有的先减少引用
 
 		pointee_ = rhs.pointee_;
 		init();

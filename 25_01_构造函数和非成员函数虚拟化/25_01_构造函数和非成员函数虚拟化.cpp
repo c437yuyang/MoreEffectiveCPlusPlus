@@ -63,5 +63,10 @@ std::ostream& operator<<(std::ostream& os, const NLComonent&component)
 
 int main()
 {
+	TextBlock tb1;
+	Graphic gh1;
+	std::cout << tb1 << std::endl; //虚拟非成员函数的使用
+	std::cout << gh1 << std::endl;
+
 	return 0;
 }

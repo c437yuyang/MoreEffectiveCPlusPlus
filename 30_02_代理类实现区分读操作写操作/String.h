@@ -36,7 +36,7 @@ public:
 		}
 		operator char() const { return _the_string.value_->data_[_index]; }
 
-		char * operator&()//这里要重载一下，不然不能用于chaar *p = &s1[2];
+		char * operator&()//这里要重载一下，不然不能用于char *p = &s1[2];
 		{
 			make_copy();
 			_the_string.value_->markUnshareable();
@@ -61,10 +61,7 @@ public:
 	{
 		return CharProxy(*this, index);
 	}
-
-
 	const char * operator&() const;
-
 	friend class CharProxy;
 private:
 	struct StringValue :public RCObject
