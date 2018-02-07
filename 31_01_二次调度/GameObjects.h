@@ -29,8 +29,6 @@ public:
 
 class SpaceShip :public GameObject
 {
-
-
 public:
 	virtual void collide(GameObject&other)
 	{
